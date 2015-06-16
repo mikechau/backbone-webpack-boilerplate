@@ -6,6 +6,7 @@ A basic Backbone boilerplate, configured with Webpack, Karma/Mocha+Chai/Webio+Cu
 
 - production webpack config
 - webpack config consolidation
+- setup backbone
 
 ## Setup
 
@@ -38,7 +39,7 @@ npm run selenium:start
 - `npm run test:integration` - run only integration tests (webio)
 - `npm run test:unit` - run only unit tests (karma)
 
-## Resources
+## References
 
 - [Web app (Karma+Mocha example)](https://github.com/cesarandreu/web-app)
 - [PhantomJS Setup](https://github.com/angular/protractor/blob/master/docs/browser-setup.md#setting-up-phantomjs)
