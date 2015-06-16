@@ -22,7 +22,7 @@ Selenium must be installed and running in order to run integration tests.
 ### Global Install (recommended)
 
 ```
-./bin/install.sh (may need to use sudo)
+./bin/install/selenium.sh (may need to use sudo)
 selenium-standalone start
 ```
 
