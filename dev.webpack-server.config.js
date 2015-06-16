@@ -40,7 +40,7 @@ module.exports = {
   module: {
     preLoaders: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: 'eslint-loader'
       }
@@ -52,11 +52,10 @@ module.exports = {
         loader: 'babel-loader?stage=0&optional=runtime'
       },
       {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        loader: 'react-hot!babel-loader?stage=0&optional=runtime'
+        test: /\.(scss|sass)$/,
+        loader: 'style-loader!css-loader!sass-loader'
       },
-            {
+      {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
         loader: 'url-loader?limit=10000'
       },

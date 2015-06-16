@@ -35,6 +35,10 @@ module.exports = {
         loader: 'babel-loader?stage=0&optional=runtime'
       },
       {
+        test: /\.(scss|sass)$/,
+        loader: 'style-loader!css-loader!sass-loader'
+      },
+      {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
         loader: 'url-loader?limit=10000'
       },
