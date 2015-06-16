@@ -1,7 +1,0 @@
-<div id="content"></div>
-
-<script src="http://localhost:9999/assets/main.js"></script>
-
-<script type='text/javascript'>
-  startCucumberRun();
-</script>
