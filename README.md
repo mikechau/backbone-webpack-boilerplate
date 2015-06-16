@@ -1,6 +1,6 @@
 # backbone-webpack-boilerplate
 
-A basic Backbone boilerplate, configured with Webpack, Karma/Mocha+Chai/Webio+Cucumber, with support for ES6.
+A basic Backbone boilerplate, configured with Webpack, Karma/Mocha+Chai/WebdriverIO+Cucumber, with support for ES6.
 
 ## TODO
 
@@ -36,7 +36,7 @@ npm run selenium:start
 ## Testing
 
 - `npm run test` - run integration and unit tests
-- `npm run test:integration` - run only integration tests (webio)
+- `npm run test:integration` - run only integration tests (WebdriverIO)
 - `npm run test:unit` - run only unit tests (karma)
 
 ## References
