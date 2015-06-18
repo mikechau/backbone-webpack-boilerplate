@@ -6,7 +6,7 @@ var path = require('path');
 module.exports = {
   output: {
     path: path.join(__dirname, 'build', 'assets'),
-    publicPath: '/assets/',
+    publicPath: 'http://localhost:2992/assets/',
     filename: "[name].js",
     chunkFilename: "[id].chunk.[hash].js",
     sourceMapFilename: "debugging/[file].map",
