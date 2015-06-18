@@ -16,15 +16,15 @@
     "packages:reinstall": "rm -rf node_modules && npm install",
     "packages:updates": "npm-check-updates",
     "packages:upgrade": "npm-check-updates -u",
-    "server:assets": "webpack-dev-server --config dev.webpack-server.config.js --hot --progress --colors --port 2992 --inline",
+    "server:assets": "webpack-dev-server --config dev.webpack-server.config.js --hot --progress --colors --port 2992 --inline --host 0.0.0.0",
     "server:start": "node dev.server.js",
     "selenium:install": "selenium-standalone install",
     "selenium:start": "selenium-standalone start",
     "shrinkwrap:build": "npm-shrinkwrap --dev",
     "shrinkwrap:remove": "rm npm-shrinkwrap.json",
-    "shrinkwrap:rebuild": "npm run shrinkwrap:remove && npm run package:install && npm run shrinkwrap:build",
+    "shrinkwrap:rebuild": "npm run shrinkwrap:remove && npm run packages:install && npm run shrinkwrap:build",
     "test": "npm run test:unit && npm run test:integration",
-    "test:integration": "node ./tests/integration/run.js",
+    "test:integration": "./tests/integration/run.js --bail",
     "test:unit": "karma start",
     "test:unit:live": "karma start --auto-watch --no-single-run"
   },
@@ -76,6 +76,6 @@
   "dependencies": {
     "backbone": "^1.2.1",
     "jquery": "^2.1.4",
-    "lodash": "^3.9.3"
+    "underscore": "^1.8.3"
   }
 }
