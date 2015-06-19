@@ -49,6 +49,7 @@
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
     "glob": "^5.0.10",
+    "hogan.js": "^3.0.2",
     "karma": "^0.12.36",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.12",
@@ -58,7 +59,9 @@
     "karma-sourcemap-loader": "^0.3.5",
     "karma-spec-reporter": "0.0.19",
     "karma-webpack": "^1.5.1",
+    "loader-utils": "^0.2.10",
     "mocha": "^2.2.5",
+    "mustache-loader": "^0.3.0",
     "nock": "^2.5.0",
     "node-sass": "^3.2.0",
     "null-loader": "^0.1.1",
@@ -75,6 +78,9 @@
   },
   "dependencies": {
     "backbone": "^1.2.1",
+    "backbone.babysitter": "^0.1.8",
+    "backbone.marionette": "^2.4.2",
+    "backbone.radio": "^0.9.1",
     "jquery": "^2.1.4",
     "underscore": "^1.8.3"
   }

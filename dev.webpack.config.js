@@ -19,7 +19,7 @@ module.exports = {
   entry: {
     main: [
       'webpack-dev-server/client?http://localhost:9999',
-      'webpack/hot/only-dev-server',
+      'webpack/hot/dev-server',
       './app/index.js'
     ]
   },
@@ -80,6 +80,10 @@ module.exports = {
       {
         test: /\.(wav|mp3)$/,
         loader: 'file-loader'
+      },
+      {
+        test: /\.mustache$/,
+        loader: 'mustache-loader'
       },
       {
         test: /\.html$/,

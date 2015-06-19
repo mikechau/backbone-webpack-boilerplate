@@ -1,1 +1,5 @@
-require('./jquery-initializer');
+require('./_initializers');
+
+import App from './base';
+
+App.start();
