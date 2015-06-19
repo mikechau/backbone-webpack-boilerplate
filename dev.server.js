@@ -7,6 +7,14 @@ new WebpackDevServer(webpack(config), {
   hot: true,
   historyApiFallback: {
     index: './templates/dev/index.html'
+  },
+  stats: {
+    colors: true,
+    exclude: [
+      /.*-dev-server/,
+      /buildin/,
+      /hot/
+    ]
   }
 }).listen(9999, 'localhost', function (err, result) {
   if (err) {
