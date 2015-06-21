@@ -1,11 +1,16 @@
+import Backbone from 'backbone';
 import { Application } from 'backbone.marionette';
-import AppLayout from './layout';
+import Layout from './layout';
 
-const App = new Application();
+const ApplicationBase = Application.extend({
+  onStart() {
+    const layout = new Layout();
+    layout.render();
 
-App.on('start', () => {
-  App.rootLayout = new AppLayout({ el: '#main' });
-  App.rootLayout.render();
+    Backbone.history.start();
+  }
 });
+
+const App = new ApplicationBase();
 
 export default App;

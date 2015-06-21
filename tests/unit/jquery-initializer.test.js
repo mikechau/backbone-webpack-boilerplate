@@ -2,7 +2,7 @@ import $jq from 'jquery';
 
 describe('jquery-initializer.js', () => {
   beforeEach(() => {
-    require('../../app/jquery-initializer');
+    require('../../app/_initializers/jquery');
   });
 
   it('has $ is available', () => {

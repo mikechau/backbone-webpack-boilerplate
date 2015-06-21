@@ -1,5 +1,7 @@
 require('./_initializers');
 
-import App from './base';
+$(document).ready(() => {
+  const App = require('./base');
 
-App.start();
+  App.start();
+});

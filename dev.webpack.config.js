@@ -112,6 +112,6 @@ module.exports = {
   ],
 
   eslint: {
-    configFile: './.eslintrc'
+    configFile: './dev.eslintrc'
   }
 };

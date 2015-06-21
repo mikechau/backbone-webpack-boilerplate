@@ -82,6 +82,7 @@
     "backbone.marionette": "^2.4.2",
     "backbone.radio": "^0.9.1",
     "jquery": "^2.1.4",
+    "mustache": "^2.1.2",
     "underscore": "^1.8.3"
   }
 }

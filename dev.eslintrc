@@ -3,7 +3,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "mocha": true
+    "mocha": true,
+    "jquery": true
   },
   "ecmaFeatures": {
     "es6": true,
@@ -17,15 +18,12 @@
     // variables
     "no-shadow": 2,
     "no-shadow-restricted-names": 2,
-    "no-unused-vars": [2, {
-      "vars": "all",
-      "args": "none"
-    }],
+    "no-unused-vars": 0,
     "no-use-before-define": [2, "nofunc"],
     // possible errors
     "comma-dangle": 0,
     "no-cond-assign": [2, "always"],
-    "no-debugger": 1,
+    "no-debugger": 0,
     "no-alert": 1,
     "no-constant-condition": 1,
     "no-dupe-keys": 2,
